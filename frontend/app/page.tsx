@@ -1,9 +1,16 @@
-export default function Home() {
+import { useUser, useSession } from "@clerk/clerk-react";
+
+export default function Dashboard() {
+  const { user } = useUser();
+  const { session } = useSession();
+
+  if (!user) return <p>Loading...</p>;
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div className="w-[200px] h-[200px]">
-        <p>This the main page</p>
-      </div>
+    <div>
+      <h2>Welcome {user.fullName}</h2>
+      <p>Email: {user.primaryEmailAddress?.emailAddress}</p>
+      <p>Session ID: {session?.id}</p>
     </div>
   );
 }
