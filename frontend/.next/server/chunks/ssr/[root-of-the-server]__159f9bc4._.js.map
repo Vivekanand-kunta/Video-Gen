@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///Users/vivek/Desktop/Final_year_Project/Web_Interface/frontend/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <div className=\"font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20\">\n      <div className=\"w-[200px] h-[200px]\">\n        <p>This the main page</p>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;0BAAE;;;;;;;;;;;;;;;;AAIX","debugId":null}}]
-}
